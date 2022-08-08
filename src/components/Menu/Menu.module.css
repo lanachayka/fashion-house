@@ -1,0 +1,19 @@
+.menu{
+    color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 10%);
+    width: 100px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 4%;
+    width: 100px;
+    text-align: center;
+    padding-inline: 1%;
+}
+
+.link:hover{
+    color: var(--titleColor);
+}

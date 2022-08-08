@@ -5,10 +5,13 @@ body{
   padding: 0;
   font-family: 'Rufina', serif;
   font-weight: 400;
+  color: var(--textColor);
 }
 
 :root{
   --desktop: 780px;
-  --buttonColor: rgb(56, 56, 56);
-  --menuColor: #fff;
+  --bgColor: #fff;
+  --textColor: #747474;
+  --titleColor: #383838;
+  --textDetailsColor: #c2a18a;
 }
