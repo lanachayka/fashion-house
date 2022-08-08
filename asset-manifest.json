@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fashion-house/static/css/main.754ebb54.css",
+    "main.js": "/fashion-house/static/js/main.2510128a.js",
+    "index.html": "/fashion-house/index.html",
+    "main.754ebb54.css.map": "/fashion-house/static/css/main.754ebb54.css.map",
+    "main.2510128a.js.map": "/fashion-house/static/js/main.2510128a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.754ebb54.css",
+    "static/js/main.2510128a.js"
+  ]
+}
