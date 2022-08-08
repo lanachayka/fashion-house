@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/fashion-house/static/css/main.a0a4c4c3.css",
-    "main.js": "/fashion-house/static/js/main.5b6737d6.js",
+    "main.css": "/fashion-house/static/css/main.b937dccb.css",
+    "main.js": "/fashion-house/static/js/main.d2567f59.js",
     "static/media/cover.png": "/fashion-house/static/media/cover.455543d4b3aa2175704f.png",
+    "static/media/aboutUs.png": "/fashion-house/static/media/aboutUs.f0b72f529456fbf9e8d4.png",
+    "static/media/aboutUsQuote.png": "/fashion-house/static/media/aboutUsQuote.1e44678668bf7d1cfecc.png",
+    "static/media/whyChooseUs.jpg": "/fashion-house/static/media/whyChooseUs.1bec0aac312392828eea.jpg",
     "static/media/colorLogo.svg": "/fashion-house/static/media/colorLogo.79b1e660b141707591071ccd5174acc4.svg",
     "static/media/whiteLogo.svg": "/fashion-house/static/media/whiteLogo.8b93c351d316a30e49d80375920d5f68.svg",
     "index.html": "/fashion-house/index.html",
-    "main.a0a4c4c3.css.map": "/fashion-house/static/css/main.a0a4c4c3.css.map",
-    "main.5b6737d6.js.map": "/fashion-house/static/js/main.5b6737d6.js.map"
+    "main.b937dccb.css.map": "/fashion-house/static/css/main.b937dccb.css.map",
+    "main.d2567f59.js.map": "/fashion-house/static/js/main.d2567f59.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0a4c4c3.css",
-    "static/js/main.5b6737d6.js"
+    "static/css/main.b937dccb.css",
+    "static/js/main.d2567f59.js"
   ]
 }
