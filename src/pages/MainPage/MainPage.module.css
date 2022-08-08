@@ -1,4 +1,4 @@
-.mainContainer{
+.container{
     background-image: url("../../images/cover.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -7,13 +7,13 @@
     height: 100vh;
 }
 
-.mainLogo{
+.logo{
     margin-top: 3%;
     margin-left: 5%;
     cursor: pointer;
 }
 
-.mainContent {
+.content {
     display: flex;
     flex-direction: row;
     height: 75%;

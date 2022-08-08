@@ -1,0 +1,21 @@
+.container {
+    max-width: 100vw;
+}
+
+.content{
+   padding-inline: 20px; 
+}
+
+.logo{
+    margin-top: 2%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 780px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 25px;
+  }
+}

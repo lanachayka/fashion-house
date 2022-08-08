@@ -6,10 +6,11 @@ body{
   font-family: 'Rufina', serif;
   font-weight: 400;
   color: var(--textColor);
+  line-height: 25.5px;
+  font-size: 17px;
 }
 
 :root{
-  --desktop: 780px;
   --bgColor: #fff;
   --textColor: #747474;
   --titleColor: #383838;
