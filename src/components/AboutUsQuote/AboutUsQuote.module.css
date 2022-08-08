@@ -1,0 +1,18 @@
+.container{
+  width: 100%;
+  padding-block: 30px;
+}
+
+.line {
+  color: var(--textDetailsColor);
+}
+
+.photo{
+  width: 100%;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 20px;
+  margin-block: 30px;
+}

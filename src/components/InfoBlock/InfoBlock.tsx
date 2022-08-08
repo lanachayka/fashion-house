@@ -1,6 +1,7 @@
 import style from "./InfoBlock.module.css";
 import { Button, ButtonTypes } from "../../components/Button/Button";
 import { Title } from "../Title/Title";
+import { Link } from "react-router-dom";
 
 export const InfoBlock: React.FC = () => {
   return (
@@ -13,7 +14,9 @@ export const InfoBlock: React.FC = () => {
       </p>
       <div className={style.buttonBlock}>
         <Button type={ButtonTypes.dark} text="Shop Now +" />
-        <Button type={ButtonTypes.light} text="About Us" />
+        <Link to="/about" key="about">
+          <Button type={ButtonTypes.light} text="About Us" />
+        </Link>
       </div>
     </div>
   );
