@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/fashion-house/static/css/main.754ebb54.css",
-    "main.js": "/fashion-house/static/js/main.2510128a.js",
+    "main.css": "/fashion-house/static/css/main.a0a4c4c3.css",
+    "main.js": "/fashion-house/static/js/main.5b6737d6.js",
+    "static/media/cover.png": "/fashion-house/static/media/cover.455543d4b3aa2175704f.png",
+    "static/media/colorLogo.svg": "/fashion-house/static/media/colorLogo.79b1e660b141707591071ccd5174acc4.svg",
+    "static/media/whiteLogo.svg": "/fashion-house/static/media/whiteLogo.8b93c351d316a30e49d80375920d5f68.svg",
     "index.html": "/fashion-house/index.html",
-    "main.754ebb54.css.map": "/fashion-house/static/css/main.754ebb54.css.map",
-    "main.2510128a.js.map": "/fashion-house/static/js/main.2510128a.js.map"
+    "main.a0a4c4c3.css.map": "/fashion-house/static/css/main.a0a4c4c3.css.map",
+    "main.5b6737d6.js.map": "/fashion-house/static/js/main.5b6737d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.754ebb54.css",
-    "static/js/main.2510128a.js"
+    "static/css/main.a0a4c4c3.css",
+    "static/js/main.5b6737d6.js"
   ]
 }
