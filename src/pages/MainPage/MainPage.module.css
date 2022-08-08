@@ -1,0 +1,13 @@
+.mainContainer{
+    background-image: url("../../images/cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainLogo{
+    margin-top: 3%;
+    margin-left: 5%;
+}

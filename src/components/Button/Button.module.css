@@ -1,0 +1,26 @@
+.light,
+.dark {
+  padding-inline: 15px;
+  padding-block: 10px;
+  background: none;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: var(--buttonColor);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.light {
+  color: var(--buttonColor);
+}
+
+.light:hover{
+  color: var(--menuColor);
+  background-color: var(--buttonColor);
+}
+
+.dark {
+  color: var(--menuColor);
+  background-color: var(--buttonColor);
+}
