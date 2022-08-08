@@ -1,0 +1,27 @@
+.light,
+.dark {
+  padding-inline: 15px;
+  padding-block: 10px;
+  background: none;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: var(--titleColor);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.light {
+  color: var(--titleColor);
+}
+
+.light:hover{
+  color: var(--bgColor);
+  background-color: var(--titleColor);
+}
+
+.dark {
+  color: var(--bgColor);
+  background-color: var(--titleColor);
+}

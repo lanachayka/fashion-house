@@ -1,0 +1,14 @@
+.infoContainer {
+    background-color: var(--bgColor);
+    width: fit-content;
+    padding: 2%;
+    height: fit-content;
+    align-self: center;
+    margin: 2%;
+}
+
+.buttonBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

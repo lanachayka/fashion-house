@@ -1,0 +1,15 @@
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title,
+.line {
+  color: var(--titleColor);
+  font-size: 36px;
+  line-height: 33.6px;
+}
+.line {
+  color: var(--textDetailsColor);
+  margin-right: 10px;
+}

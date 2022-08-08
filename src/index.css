@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Rufina', serif;
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+:root{
+  --desktop: 780px;
+  --bgColor: #fff;
+  --textColor: #747474;
+  --titleColor: #383838;
+  --textDetailsColor: #c2a18a;
 }
