@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button, ButtonTypes } from "../Button/Button";
 import { Title } from "../Title/Title";
 import style from "./WhyChooseUsBlock.module.css";
@@ -24,7 +25,9 @@ export const WhyChooseUsBlock: React.FC = () => {
           collections where clothes go well with each other. You can mix them as
           well to create stunning new looks!
         </p>
-        <Button text="LearnMore +" type={ButtonTypes.dark} />
+        <Link to="/history">
+          <Button text="Learn More +" type={ButtonTypes.dark} />
+        </Link>
       </div>
     </div>
   );

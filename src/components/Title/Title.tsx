@@ -7,7 +7,7 @@ type Props = {
 
 export const Title: React.FC<Props> = ({ text }) => {
     return (
-      <div className={style.titleContainer}>
+      <div className={style.container}>
         <h1 className={style.title}>
           <span className={style.line}>—</span>
           {text}

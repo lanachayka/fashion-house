@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const InfoBlock: React.FC = () => {
   return (
-    <div className={style.infoContainer}>
+    <div className={style.container}>
       <p>DESIGNER CLOTHES</p>
       <Title text="Your New Everyday Style." />
       <p>

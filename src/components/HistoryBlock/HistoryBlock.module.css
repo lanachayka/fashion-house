@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    color: var(--titleColor);
+}
+
+.line{
+    background-color: var(--textDetailsColor);
+    width: 35px;
+    height: 2px;
+}
+
+.year{
+    color: var(--titleColor);
+    background-color: var(--bgDetailsColor);
+    border-radius: 50%;
+    padding: 20px;
+}
