@@ -25,7 +25,7 @@ export const WhyChooseUsBlock: React.FC = () => {
           collections where clothes go well with each other. You can mix them as
           well to create stunning new looks!
         </p>
-        <Link to="/history">
+        <Link to="/fashion-house/history">
           <Button text="Learn More +" type={ButtonTypes.dark} />
         </Link>
       </div>

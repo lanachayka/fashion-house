@@ -23,7 +23,7 @@
 
 @media (min-width: 780px) {
   .container {
-    background-image: url("../../images/whyChooseUs.jpg");
+    background-image: url("../../images/aboutUs/whyChooseUs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;

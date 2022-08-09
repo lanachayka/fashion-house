@@ -2,6 +2,7 @@ import { MainPage } from "./pages/MainPage/MainPage";
 import { Route } from "react-router-dom";
 import { AboutPage } from "./pages/AboutPage/AboutPage";
 import { HistoryPage } from "./pages/HistoryPage/HistoryPage";
+import { CatalogPage } from "./pages/CatalogPage/CatalogPage";
 
 export const routes: JSX.Element[] = [
   <Route
@@ -10,6 +11,19 @@ export const routes: JSX.Element[] = [
     element={<MainPage />}
   />,
   <Route key={"/"} path={"/"} element={<MainPage />} />,
-  <Route key={"/about"} path={"/about"} element={<AboutPage />} />,
-  <Route key={"/history"} path={"/history"} element={<HistoryPage />} />,
+  <Route
+    key={"/about"}
+    path={"/fashion-house/about"}
+    element={<AboutPage />}
+  />,
+  <Route
+    key={"/history"}
+    path={"/fashion-house/history"}
+    element={<HistoryPage />}
+  />,
+  <Route
+    key={"/catalog"}
+    path={"/fashion-house/catalog"}
+    element={<CatalogPage />}
+  />,
 ];

@@ -1,7 +1,7 @@
 // @ts-ignore
-import colorLogo from "../../images/colorLogo.svg";
+import colorLogo from "../../images/logo/colorLogo.svg";
 // @ts-ignore
-import whiteLogo from "../../images/whiteLogo.svg";
+import whiteLogo from "../../images/logo/whiteLogo.svg";
 
 import { Link } from "react-router-dom";
 
@@ -17,6 +17,12 @@ type Props = {
 
 export const Logo: React.FC<Props> = ({ type, className }) => {
   return (
-    <Link to="/"><img src={type === LogoTypes.color ? colorLogo : whiteLogo} alt="Logo" className={className} /></Link>
+    <Link to="/fashion-house">
+      <img
+        src={type === LogoTypes.color ? colorLogo : whiteLogo}
+        alt="Logo"
+        className={className}
+      />
+    </Link>
   );
 };

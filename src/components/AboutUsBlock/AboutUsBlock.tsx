@@ -1,6 +1,6 @@
 import { Title } from "../../components/Title/Title";
 import style from "./AboutUsBlock.module.css";
-import aboutUs from "../../images/aboutUs.png";
+import aboutUs from "../../images/aboutUs/aboutUs.png";
 
 export const AboutUsBlock = () => {
   return (
