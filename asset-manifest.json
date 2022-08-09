@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/fashion-house/static/css/main.4d2cf096.css",
-    "main.js": "/fashion-house/static/js/main.2688e0da.js",
+    "main.css": "/fashion-house/static/css/main.8cddacbe.css",
+    "main.js": "/fashion-house/static/js/main.7bbd4a69.js",
     "static/media/cover.png": "/fashion-house/static/media/cover.455543d4b3aa2175704f.png",
     "static/media/aboutUs.png": "/fashion-house/static/media/aboutUs.f0b72f529456fbf9e8d4.png",
     "static/media/aboutUsQuote.png": "/fashion-house/static/media/aboutUsQuote.1e44678668bf7d1cfecc.png",
+    "static/media/pants.png": "/fashion-house/static/media/pants.8eafef54f2de90a68953.png",
+    "static/media/accessories.png": "/fashion-house/static/media/accessories.4d1b73ce5e2f9556c43d.png",
+    "static/media/dresses.png": "/fashion-house/static/media/dresses.364150a5ed7bffe24486.png",
     "static/media/whyChooseUs.jpg": "/fashion-house/static/media/whyChooseUs.1bec0aac312392828eea.jpg",
-    "static/media/colorLogo.svg": "/fashion-house/static/media/colorLogo.79b1e660b141707591071ccd5174acc4.svg",
-    "static/media/whiteLogo.svg": "/fashion-house/static/media/whiteLogo.8b93c351d316a30e49d80375920d5f68.svg",
+    "static/media/shirt.png": "/fashion-house/static/media/shirt.3a4a00a1a98fbccc7416.png",
+    "static/media/colorLogo.svg": "/fashion-house/static/media/colorLogo.9b7e892493216b2c939283a9f1c3bb10.svg",
+    "static/media/whiteLogo.svg": "/fashion-house/static/media/whiteLogo.0a31a38a35eb7947d0e8be0052059edd.svg",
     "index.html": "/fashion-house/index.html",
-    "main.4d2cf096.css.map": "/fashion-house/static/css/main.4d2cf096.css.map",
-    "main.2688e0da.js.map": "/fashion-house/static/js/main.2688e0da.js.map"
+    "static/media/arrow_forward.svg": "/fashion-house/static/media/arrow_forward.572e9ec734edf05f93fe2ff462e02ca4.svg",
+    "static/media/arrow_back.svg": "/fashion-house/static/media/arrow_back.61421c4c8971cc5e6dfddd8d2d3b0f6a.svg",
+    "main.8cddacbe.css.map": "/fashion-house/static/css/main.8cddacbe.css.map",
+    "main.7bbd4a69.js.map": "/fashion-house/static/js/main.7bbd4a69.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d2cf096.css",
-    "static/js/main.2688e0da.js"
+    "static/css/main.8cddacbe.css",
+    "static/js/main.7bbd4a69.js"
   ]
 }
