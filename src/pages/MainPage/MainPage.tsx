@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { InfoBlock } from "../../components/InfoBlock/InfoBlock";
 import { Logo, LogoTypes } from "../../components/Logo/Logo";
 import { Menu } from "../../components/Menu/Menu";
