@@ -1,5 +1,5 @@
 import style from "./AboutUsQuote.module.css";
-import aboutUs from "../../images/aboutUsQuote.png";
+import aboutUs from "../../images/aboutUs/aboutUsQuote.png";
 
 export const AboutUsQuote: React.FC = () => {
     return (

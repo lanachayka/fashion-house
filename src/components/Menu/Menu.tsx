@@ -5,16 +5,28 @@ import style from "./Menu.module.css";
 export const Menu: React.FC = () => {
     return (
       <nav className={style.menu}>
-        <NavLink className={style.link} to="/about" key="/about">
+        <NavLink className={style.link} to="/fashion-house/about" key="/about">
           About us
         </NavLink>
-        <NavLink className={style.link} to="/catalog" key="/catalog">
+        <NavLink
+          className={style.link}
+          to="/fashion-house/catalog"
+          key="/catalog"
+        >
           Catalog
         </NavLink>
-        <NavLink className={style.link} to="/collection" key="/collection">
+        <NavLink
+          className={style.link}
+          to="/fashion-house/collection"
+          key="/collection"
+        >
           Collection
         </NavLink>
-        <NavLink className={style.link} to="/contacts" key="/contacts">
+        <NavLink
+          className={style.link}
+          to="/fashion-house/contacts"
+          key="/contacts"
+        >
           Contact us
         </NavLink>
       </nav>

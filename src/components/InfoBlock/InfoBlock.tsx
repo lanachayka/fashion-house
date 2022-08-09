@@ -14,7 +14,7 @@ export const InfoBlock: React.FC = () => {
       </p>
       <div className={style.buttonBlock}>
         <Button type={ButtonTypes.dark} text="Shop Now +" />
-        <Link to="/about" key="about">
+        <Link to="/fashion-house/about" key="about">
           <Button type={ButtonTypes.light} text="About Us" />
         </Link>
       </div>
