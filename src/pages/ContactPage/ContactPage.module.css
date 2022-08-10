@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+}
+
+.content{
+    margin: 50px;
+    background-color: var(--bgDetailsColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 50px;
+    text-align: center;
+    padding-inline: 20px;
+}
+
+.title{
+    color: var(--titleColor);
+}
+
+.line{
+    background-color: var(--textDetailsColor);
+    width: 65px;
+    height: 3px;
+}
+
+.logo{
+    margin-top: 2%;
+    margin-left: 20px;
+    cursor: pointer;
+}

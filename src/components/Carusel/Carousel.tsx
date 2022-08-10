@@ -27,9 +27,9 @@ export const Carousel: React.FC<Props> = ({ items }) => {
     }
     return (
       <div className={style.container}>
-        <img src={back} onClick={backHandler}></img>
+        <img src={back} onClick={backHandler} alt="arrow back icon"></img>
         <CatalogBlock item={items[position]} />
-        <img src={forward} onClick={forwardHandler}></img>
+        <img src={forward} onClick={forwardHandler} alt="arrow forward icon"></img>
       </div>
     );
 }
