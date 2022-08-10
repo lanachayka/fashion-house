@@ -26,7 +26,7 @@ export const WhyChooseUsBlock: React.FC = () => {
           well to create stunning new looks!
         </p>
         <Link to="/fashion-house/history">
-          <Button text="Learn More +" type={ButtonTypes.dark} />
+          <Button text="Learn More +" styleType={ButtonTypes.dark} />
         </Link>
       </div>
     </div>
