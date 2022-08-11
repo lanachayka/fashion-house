@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/fashion-house/static/css/main.74c120e5.css",
-    "main.js": "/fashion-house/static/js/main.8bbdc3bb.js",
+    "main.css": "/fashion-house/static/css/main.15a6d7d5.css",
+    "main.js": "/fashion-house/static/js/main.6bc40793.js",
     "static/media/cover.png": "/fashion-house/static/media/cover.455543d4b3aa2175704f.png",
     "static/media/aboutUs.png": "/fashion-house/static/media/aboutUs.f0b72f529456fbf9e8d4.png",
     "static/media/aboutUsQuote.png": "/fashion-house/static/media/aboutUsQuote.1e44678668bf7d1cfecc.png",
     "static/media/pants.png": "/fashion-house/static/media/pants.8eafef54f2de90a68953.png",
     "static/media/accessories.png": "/fashion-house/static/media/accessories.4d1b73ce5e2f9556c43d.png",
     "static/media/dresses.png": "/fashion-house/static/media/dresses.364150a5ed7bffe24486.png",
+    "static/media/productCode19.png": "/fashion-house/static/media/productCode19.1cc4c6c2fed10e83537d.png",
     "static/media/whyChooseUs.jpg": "/fashion-house/static/media/whyChooseUs.1bec0aac312392828eea.jpg",
+    "static/media/productCode21.png": "/fashion-house/static/media/productCode21.0d23b610a5ac3cbed871.png",
+    "static/media/productCode20.png": "/fashion-house/static/media/productCode20.b16d23c79238e82ac67d.png",
+    "static/media/productCode18.png": "/fashion-house/static/media/productCode18.54c39de56806c888588e.png",
     "static/media/shirt.png": "/fashion-house/static/media/shirt.3a4a00a1a98fbccc7416.png",
     "static/media/colorLogo.svg": "/fashion-house/static/media/colorLogo.9b7e892493216b2c939283a9f1c3bb10.svg",
     "static/media/whiteLogo.svg": "/fashion-house/static/media/whiteLogo.0a31a38a35eb7947d0e8be0052059edd.svg",
@@ -17,11 +21,11 @@
     "static/media/close.svg": "/fashion-house/static/media/close.c39fcc959dbee3fb9fca12c3d3a74233.svg",
     "static/media/arrow_forward.svg": "/fashion-house/static/media/arrow_forward.572e9ec734edf05f93fe2ff462e02ca4.svg",
     "static/media/arrow_back.svg": "/fashion-house/static/media/arrow_back.61421c4c8971cc5e6dfddd8d2d3b0f6a.svg",
-    "main.74c120e5.css.map": "/fashion-house/static/css/main.74c120e5.css.map",
-    "main.8bbdc3bb.js.map": "/fashion-house/static/js/main.8bbdc3bb.js.map"
+    "main.15a6d7d5.css.map": "/fashion-house/static/css/main.15a6d7d5.css.map",
+    "main.6bc40793.js.map": "/fashion-house/static/js/main.6bc40793.js.map"
   },
   "entrypoints": [
-    "static/css/main.74c120e5.css",
-    "static/js/main.8bbdc3bb.js"
+    "static/css/main.15a6d7d5.css",
+    "static/js/main.6bc40793.js"
   ]
 }
