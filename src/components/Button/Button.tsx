@@ -4,6 +4,7 @@ import style from "./Button.module.css";
 export enum ButtonTypes {
   dark = "dark",
   light = "light",
+  color = "color"
 }
 
 type Props = {

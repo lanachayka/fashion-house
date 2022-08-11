@@ -1,5 +1,9 @@
-.photo {
+.photoBig {
   max-height: 380px;
+}
+
+.photoSmall {
+  max-height: 280px;
 }
 
 .container {
@@ -23,7 +27,7 @@
 }
 
 @media (min-width: 780px) {
-  .photo {
+  .photoBig {
     max-height: 480px;
   }
 }
