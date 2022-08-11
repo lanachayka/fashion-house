@@ -1,0 +1,29 @@
+.photo {
+  max-height: 380px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.price{
+   color: var(--textDetailsColor); 
+}
+
+.digital{
+    padding-right: 10px;
+    font-size: 26px;
+}
+
+@media (min-width: 780px) {
+  .photo {
+    max-height: 480px;
+  }
+}

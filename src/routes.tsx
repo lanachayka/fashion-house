@@ -4,6 +4,7 @@ import { AboutPage } from "./pages/AboutPage/AboutPage";
 import { HistoryPage } from "./pages/HistoryPage/HistoryPage";
 import { CatalogPage } from "./pages/CatalogPage/CatalogPage";
 import { ContactPage } from "./pages/ContactPage/ContactPage";
+import { CollectionPage } from "./pages/CollectionPage/CollectionPage";
 
 export const routes: JSX.Element[] = [
   <Route
@@ -26,6 +27,11 @@ export const routes: JSX.Element[] = [
     key={"/catalog"}
     path={"/fashion-house/catalog"}
     element={<CatalogPage />}
+  />,
+  <Route
+    key={"/collection"}
+    path={"/fashion-house/collection"}
+    element={<CollectionPage />}
   />,
   <Route
     key={"/contacts"}
