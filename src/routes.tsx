@@ -5,6 +5,7 @@ import { HistoryPage } from "./pages/HistoryPage/HistoryPage";
 import { CatalogPage } from "./pages/CatalogPage/CatalogPage";
 import { ContactPage } from "./pages/ContactPage/ContactPage";
 import { CollectionPage } from "./pages/CollectionPage/CollectionPage";
+import { StoreHomePage } from "./pages/StoreHomePage/StoreHomePage";
 
 export const routes: JSX.Element[] = [
   <Route
@@ -37,5 +38,10 @@ export const routes: JSX.Element[] = [
     key={"/contacts"}
     path={"/fashion-house/contacts"}
     element={<ContactPage />}
+  />,
+  <Route
+    key={"/store"}
+    path={"/fashion-house/store"}
+    element={<StoreHomePage />}
   />,
 ];

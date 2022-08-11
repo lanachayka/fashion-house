@@ -1,5 +1,6 @@
 .light,
-.dark {
+.dark,
+.color {
   padding-inline: 15px;
   padding-block: 10px;
   background: none;
@@ -24,4 +25,15 @@
 .dark {
   color: var(--bgColor);
   background-color: var(--titleColor);
+}
+
+.color{
+  color: var(--titleColor);
+  background-color: var(--bgDetailsColor);
+  border: none;
+  font-weight: 400;
+}
+
+.color:hover{
+  background-color: var(--textDetailsColor);
 }
