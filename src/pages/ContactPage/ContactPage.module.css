@@ -1,9 +1,3 @@
-.container{
-    width: 100%;
-    height: 100%;
-    background-color: var(--bgColor);
-}
-
 .content{
     margin: 50px;
     background-color: var(--bgDetailsColor);
@@ -26,8 +20,3 @@
     height: 3px;
 }
 
-.logo{
-    margin-top: 2%;
-    margin-left: 20px;
-    cursor: pointer;
-}
