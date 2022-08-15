@@ -1,0 +1,22 @@
+.container {
+    max-width: 100px;
+    position: fixed;
+    background-color: var(--bgColor);
+    right: 40px;
+    top: 40px;
+    border-radius: 50%;
+    padding-inline: 10px;
+    padding-block: 7px;
+}
+
+.count{
+    position: fixed;
+    right: 40px;
+    top: 30px;
+    z-index: 2;
+    background-color: var(--textDetailsColor);
+    color: var(--bgColor);
+    border-radius: 50%;
+    padding-inline: 10px;
+    padding-block: 2px;
+}
