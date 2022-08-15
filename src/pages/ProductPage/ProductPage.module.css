@@ -1,0 +1,80 @@
+.link {
+  text-decoration: none;
+  color: var(--titleColor);
+}
+
+.text {
+  margin-left: 20px;
+  margin-block: 40px;
+}
+
+.photo {
+  max-height: 350px;
+  align-self: center;
+  justify-self: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-inline: 20px;
+  margin-bottom: 40px;
+}
+
+.stock {
+  color: var(--successColor);
+}
+
+.title {
+  color: var(--titleColor);
+  margin: 0;
+}
+
+.price {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.digital {
+  padding-right: 10px;
+  font-size: 26px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.orderBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.input {
+  background-color: var(--bgDetailsColor);
+  border: none;
+  border-radius: 2px;
+}
+
+.input:focus {
+  border: none;
+  background-color: var(--textDetailsColor);
+  outline: none;
+}
+
+.description{
+    border-bottom: var(--textDetailsColor) solid 2px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 780px) {
+  .photo{
+    max-height: 450px;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
