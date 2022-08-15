@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../context/AppContext";
 import { CollectionItem } from "../../pages/CollectionPage/collectionData";
 import { Button, ButtonTypes } from "../Button/Button";
 import style from "./CollectionBlock.module.css";
@@ -16,7 +17,23 @@ type Props = {
   photoSize: PhotoSizes;
 };
 
-export const CollectionBlock: React.FC<Props> = ({ item, buttonType, buttonText, photoSize }) => {
+export const CollectionBlock: React.FC<Props> = ({
+  item,
+  buttonType,
+  buttonText,
+  photoSize,
+}) => {
+  const { count, setCount, selectedItems, setSelectedItems } =
+    useContext(AppContext);
+  const onBuy = () => {
+    setCount(count + 1);
+    const copyItems = [...selectedItems];
+    copyItems.push({
+      count: 1,
+      item: item,
+    });
+    setSelectedItems(copyItems);
+  };
   const imgUrl = require(`../../images/collection/${item.photo}`);
   return (
     <div className={style.container}>
@@ -28,7 +45,7 @@ export const CollectionBlock: React.FC<Props> = ({ item, buttonType, buttonText,
         <span className={style.digital}>{item.price.toFixed(2)}</span>
         {item.currency}
       </h3>
-      <Button styleType={buttonType} text={buttonText} />
+      <Button styleType={buttonType} text={buttonText} onClick={onBuy} />
     </div>
   );
 };

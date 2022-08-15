@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button, ButtonTypes } from "../../components/Button/Button";
 import { StoreHeader } from "../../components/StoreHeader/StoreHeader";
+import { AppContext } from "../../context/AppContext";
 import {
   collectionData,
   CollectionItem,
@@ -12,11 +13,25 @@ export const ProductPage: React.FC = () => {
   const { id } = useParams();
   const [product, setProduct] = useState<CollectionItem>();
   const [imgUrl, setImgUrl] = useState<string>();
+  const [productCount, setProductCount] = useState<number>(1);
   useEffect(() => {
     const item = collectionData.filter((item) => item.id === Number(id));
     setProduct(item[0]);
     setImgUrl(require(`../../images/collection/${item[0].photo}`));
   }, [id]);
+  const { count, setCount, selectedItems, setSelectedItems } =
+    useContext(AppContext);
+  const onBuy = () => {
+    if (product) {
+      setCount(count + productCount);
+      const copyItems = [...selectedItems];
+      copyItems.push({
+        count: productCount,
+        item: product
+      });
+      setSelectedItems(copyItems);
+    }
+  };
   return (
     <div>
       <StoreHeader />
@@ -40,10 +55,11 @@ export const ProductPage: React.FC = () => {
                 type="number"
                 min="1"
                 max="5"
-                defaultValue={1}
+                value={productCount}
                 className={style.input}
+                onChange={(e) => setProductCount(+e.target.value)}
               />
-              <Button styleType={ButtonTypes.color} text="Add to Cart" />
+              <Button styleType={ButtonTypes.color} text="Add to Cart" onClick={onBuy}/>
             </div>
             <p className={style.description}>Description</p>
             <p>{product.description}</p>
