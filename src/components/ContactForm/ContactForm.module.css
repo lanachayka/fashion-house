@@ -5,17 +5,3 @@
   justify-content: center;
   width: 100%;
 }
-
-.input {
-  background-color: var(--inputColor);
-  border: none;
-  width: 90%;
-  margin-bottom: 25px;
-  min-height: 40px;
-  padding-inline: 10px;
-  font-family: "Rufina", serif;
-  font-weight: 400;
-  color: var(--textColor);
-  line-height: 25.5px;
-  font-size: 17px;
-}
