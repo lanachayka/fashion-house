@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./CartIcon.module.css";
 import icon from "../../images/icons/shopping_bag.svg";
 import { Modal } from "../Modal/Modal";
+import { Cart } from "../Cart/Cart";
 
 type Props = {
   count: number;
@@ -12,7 +13,7 @@ export const CartIcon: React.FC<Props> = ({ count }) => {
   return (
     <div className={style.container}>
       <Modal isShowing={toggleModal} hide={() => setToggleModal(false)}>
-        <div>cart</div>
+        <Cart hideModal={() => setToggleModal(false)} />
       </Modal>
       <img
         src={icon}

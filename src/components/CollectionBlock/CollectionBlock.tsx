@@ -28,10 +28,17 @@ export const CollectionBlock: React.FC<Props> = ({
   const onBuy = () => {
     setCount(count + 1);
     const copyItems = [...selectedItems];
-    copyItems.push({
-      count: 1,
-      item: item,
-    });
+    const alreadyInCartIndex = copyItems.findIndex(
+      (i) => i.item.id === item.id
+    );
+    if (alreadyInCartIndex >= 0) {
+      copyItems[alreadyInCartIndex].count += 1;
+    } else {
+      copyItems.push({
+        count: 1,
+        item: item,
+      });
+    }
     setSelectedItems(copyItems);
   };
   const imgUrl = require(`../../images/collection/${item.photo}`);

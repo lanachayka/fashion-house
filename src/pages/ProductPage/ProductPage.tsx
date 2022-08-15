@@ -25,10 +25,17 @@ export const ProductPage: React.FC = () => {
     if (product) {
       setCount(count + productCount);
       const copyItems = [...selectedItems];
-      copyItems.push({
-        count: productCount,
-        item: product
-      });
+      const alreadyInCartIndex = copyItems.findIndex(
+        (i) => i.item.id === product.id
+      );
+      if (alreadyInCartIndex >= 0) {
+        copyItems[alreadyInCartIndex].count += productCount;
+      } else {
+        copyItems.push({
+          count: productCount,
+          item: product,
+        });
+      }
       setSelectedItems(copyItems);
     }
   };
@@ -59,7 +66,11 @@ export const ProductPage: React.FC = () => {
                 className={style.input}
                 onChange={(e) => setProductCount(+e.target.value)}
               />
-              <Button styleType={ButtonTypes.color} text="Add to Cart" onClick={onBuy}/>
+              <Button
+                styleType={ButtonTypes.color}
+                text="Add to Cart"
+                onClick={onBuy}
+              />
             </div>
             <p className={style.description}>Description</p>
             <p>{product.description}</p>
