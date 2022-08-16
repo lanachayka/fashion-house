@@ -1,6 +1,8 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button, ButtonTypes } from "../../components/Button/Button";
+import { NumberInput } from "../../components/NumberInput/NumberInput";
+import { Price } from "../../components/Price/Price";
 import { StoreHeader } from "../../components/StoreHeader/StoreHeader";
 import { AppContext } from "../../context/AppContext";
 import {
@@ -19,11 +21,10 @@ export const ProductPage: React.FC = () => {
     setProduct(item[0]);
     setImgUrl(require(`../../images/collection/${item[0].photo}`));
   }, [id]);
-  const { count, setCount, selectedItems, setSelectedItems } =
+  const { selectedItems, setSelectedItems } =
     useContext(AppContext);
   const onBuy = () => {
     if (product) {
-      setCount(count + productCount);
       const copyItems = [...selectedItems];
       const alreadyInCartIndex = copyItems.findIndex(
         (i) => i.item.id === product.id
@@ -52,18 +53,11 @@ export const ProductPage: React.FC = () => {
             <p className={style.stock}>In stock</p>
             <h2 className={style.title}>{product.name}</h2>
             <p>Product code {id}</p>
-            <h3 className={style.price}>
-              <span className={style.digital}>{product.price.toFixed(2)}</span>
-              {product.currency}
-            </h3>
+            <Price currency={product.currency} price={product.price} cartMode={false} />
             <hr className={style.line}></hr>
             <div className={style.orderBlock}>
-              <input
-                type="number"
-                min="1"
-                max="5"
+              <NumberInput
                 value={productCount}
-                className={style.input}
                 onChange={(e) => setProductCount(+e.target.value)}
               />
               <Button
