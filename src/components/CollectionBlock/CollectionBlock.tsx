@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../context/AppContext";
 import { CollectionItem } from "../../pages/CollectionPage/collectionData";
 import { Button, ButtonTypes } from "../Button/Button";
+import { Price } from "../Price/Price";
 import style from "./CollectionBlock.module.css";
 
 export enum PhotoSizes {
@@ -23,10 +24,8 @@ export const CollectionBlock: React.FC<Props> = ({
   buttonText,
   photoSize,
 }) => {
-  const { count, setCount, selectedItems, setSelectedItems } =
-    useContext(AppContext);
+  const { selectedItems, setSelectedItems } = useContext(AppContext);
   const onBuy = () => {
-    setCount(count + 1);
     const copyItems = [...selectedItems];
     const alreadyInCartIndex = copyItems.findIndex(
       (i) => i.item.id === item.id
@@ -48,10 +47,7 @@ export const CollectionBlock: React.FC<Props> = ({
         <img className={style[photoSize]} src={imgUrl} alt={item.name}></img>
       </Link>
       <h2 className={style.title}>{item.name}</h2>
-      <h3 className={style.price}>
-        <span className={style.digital}>{item.price.toFixed(2)}</span>
-        {item.currency}
-      </h3>
+      <Price currency={item.currency} price={item.price} cartMode={false} />
       <Button styleType={buttonType} text={buttonText} onClick={onBuy} />
     </div>
   );

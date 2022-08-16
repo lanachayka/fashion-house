@@ -1,0 +1,17 @@
+.price {
+  color: var(--textDetailsColor);
+}
+
+.digital {
+  padding-right: 10px;
+  font-size: 26px;
+}
+
+.cartPrice{
+    font-size: 16px;
+}
+
+.cartDigital {
+  padding-right: 10px;
+  font-size: 20px;
+}

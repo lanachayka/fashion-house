@@ -30,10 +30,13 @@ export const AppContextWrapper: React.FC<AppContextWrapperProps> = ({
 
   useEffect(() => {
     let totalPrice = 0;
-    for (const key in selectedItems) {
-      totalPrice += selectedItems[key].count * selectedItems[key].item.price;
-    }
+    let updatedCount = 0;
+    selectedItems.forEach((item) => {
+      totalPrice += item.count * item.item.price;
+      updatedCount += item.count;
+    });
     setTotal(totalPrice);
+    setCount(updatedCount);
   }, [selectedItems]);
 
   return (
