@@ -5,6 +5,7 @@ import { CollectionItem } from "../../pages/CollectionPage/collectionData";
 import { Button, ButtonTypes } from "../Button/Button";
 import { Price } from "../Price/Price";
 import style from "./CollectionBlock.module.css";
+import { findItemById } from "./helper";
 
 export enum PhotoSizes {
   small = "photoSmall",
@@ -26,19 +27,7 @@ export const CollectionBlock: React.FC<Props> = ({
 }) => {
   const { selectedItems, setSelectedItems } = useContext(AppContext);
   const onBuy = () => {
-    const copyItems = [...selectedItems];
-    const alreadyInCartIndex = copyItems.findIndex(
-      (i) => i.item.id === item.id
-    );
-    if (alreadyInCartIndex >= 0) {
-      copyItems[alreadyInCartIndex].count += 1;
-    } else {
-      copyItems.push({
-        count: 1,
-        item: item,
-      });
-    }
-    setSelectedItems(copyItems);
+    setSelectedItems(findItemById(selectedItems, item));
   };
   const imgUrl = require(`../../images/collection/${item.photo}`);
   return (

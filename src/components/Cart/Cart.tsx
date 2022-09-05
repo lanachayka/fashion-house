@@ -34,7 +34,7 @@ export const Cart: React.FC<Props> = ({ hideModal }) => {
   return (
     <div>
       <p>Products</p>
-      {selectedItems.map((selectedItem) => (
+      {selectedItems && selectedItems.map((selectedItem) => (
         <div key={selectedItem.item.id} className={style.products}>
           <img
             src={require(`../../images/collection/${selectedItem.item.photo}`)}
@@ -68,13 +68,9 @@ export const Cart: React.FC<Props> = ({ hideModal }) => {
           ></img>
         </div>
       ))}
-      <p className={style.total}>
-        Total:{" "}
-        <Price
-          price={total}
-          cartMode={true}
-        />
-      </p>
+      <div className={style.total}>
+        Total: <Price price={total} cartMode={true} />
+      </div>
       <p>Place an order</p>
       <Form formType={FormTypes.order} onSubmit={onSubmit} />
     </div>

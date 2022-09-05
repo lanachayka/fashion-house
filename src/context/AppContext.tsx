@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { CollectionItem } from "../pages/CollectionPage/collectionData";
 
-type SelectedItems = {
+export type SelectedItems = {
   count: number;
   item: CollectionItem;
 };
 
-type AppContextType = {
+export type AppContextType = {
   count: number;
   setCount: (count: number) => void;
   selectedItems: SelectedItems[];

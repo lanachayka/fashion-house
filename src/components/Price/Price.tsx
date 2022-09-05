@@ -10,7 +10,9 @@ type Props = {
 export const Price: React.FC<Props> = ({ price, currency, cartMode }) => {
   return (
     <h3 className={cartMode ? style.cartPrice : style.price}>
-      <span className={cartMode ? style.cartDigital : style.digital}>{price.toFixed(2)}</span>
+      <span className={cartMode ? style.cartDigital : style.digital}>
+        {price && price.toFixed(2)}
+      </span>
       {currency ? currency : "USD"}
     </h3>
   );
