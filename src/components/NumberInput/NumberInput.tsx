@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./NumberInput.module.css";
 
 type Props = {
@@ -21,6 +20,7 @@ export const NumberInput: React.FC<Props> = ({
       defaultValue={defaultValue}
       onChange={onChange}
       value={value}
+      data-testid="numberBox"
     />
   );
 };

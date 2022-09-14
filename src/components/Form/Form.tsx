@@ -7,7 +7,7 @@ export enum FormTypes {
 }
 
 type Props = {
-  onSubmit: () => void;
+  onSubmit: ((e: React.MouseEvent<HTMLFormElement>) => void);
   formType: FormTypes;
 };
 
