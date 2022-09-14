@@ -1,9 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { CollectionItem } from "../../pages/CollectionPage/collectionData";
 import { CollectionBlock, PhotoSizes } from "./CollectionBlock";
 import { ButtonTypes } from "../Button/Button";
 import { BrowserRouter } from "react-router-dom";
 import { findItemById } from "./helper";
+import {
+  SelectedItems,
+} from "../../context/AppContext";
+import { customRender } from "../../test/helper";
 
 const mockItem: CollectionItem = {
   id: 18,
@@ -60,4 +64,35 @@ describe("findItemById function", () => {
   });
 });
 
-//TODO: add test for App context
+describe("context testing", () => {
+  const providerProps = {
+    count: 2,
+    setCount: (count: number) => {
+      providerProps.count = count;
+    },
+    selectedItems: [] as SelectedItems[],
+    setSelectedItems: (items: SelectedItems[]) => {
+      providerProps.selectedItems = items;
+    },
+    total: 290,
+    setTotal: (total: number) => {
+      providerProps.total = total;
+    },
+  };
+  beforeEach(() => {
+    customRender(
+      <CollectionBlock
+        item={mockItem}
+        photoSize={PhotoSizes.big}
+        buttonText="test button text"
+        buttonType={ButtonTypes.color}
+      />,
+      providerProps
+    );
+  });
+  test("add item to selected items", () => {
+    const button = screen.getByRole("button");
+    fireEvent.click(button);
+    expect(providerProps.selectedItems).toHaveLength(1);
+  })
+});

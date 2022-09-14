@@ -1,12 +1,7 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
-import {
-  AppContextWrapper,
-  AppContext,
-  AppContextType,
-  SelectedItems,
-} from "../../context/AppContext";
+import { fireEvent, render, screen } from "@testing-library/react";
+import { AppContextWrapper, SelectedItems } from "../../context/AppContext";
 import { Cart } from "./Cart";
+import { customRender } from "../../test/helper";
 
 test("render without errors", () => {
   render(<Cart hideModal={() => {}} />);
@@ -20,13 +15,6 @@ test("called hide function after order", () => {
   fireEvent.click(orderButton);
   expect(mockHide).toBeCalled();
 });
-
-const customRender = (ui: React.ReactNode, providerProps: AppContextType) => {
-  return render(
-    <AppContext.Provider value={providerProps}>{ui}</AppContext.Provider>,
-    { wrapper: BrowserRouter }
-  );
-};
 
 describe("context testing", () => {
   const providerProps = {
